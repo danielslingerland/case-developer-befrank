@@ -15,7 +15,7 @@ export class AppComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    private pensionService: Pensioenservice
+    private pensioenService: Pensioenservice
   ) {}
 
   pensioenwaarde: number | null | undefined;
@@ -28,7 +28,7 @@ export class AppComponent {
   });
 
   onSubmit(): void {
-    this.pensionService.getPensioenwaarde(
+    this.pensioenService.getPensioenwaarde(
       this.pensioenForm.value.deelnemerId,
       this.pensioenForm.value.pensioenleeftijd
     ).subscribe(
