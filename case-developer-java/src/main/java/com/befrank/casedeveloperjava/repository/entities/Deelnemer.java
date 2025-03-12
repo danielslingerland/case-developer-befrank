@@ -29,7 +29,7 @@ public class Deelnemer {
     private String email;
     private LocalDate geboortedatum;
     private String pensioenrekening;
-    @OneToMany
+    @OneToMany(mappedBy = "deelnemer")
     private List<Dienstverband> dienstverbanden;
 
 

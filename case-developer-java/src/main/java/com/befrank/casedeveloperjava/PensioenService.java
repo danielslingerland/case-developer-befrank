@@ -37,7 +37,7 @@ public class PensioenService {
 
     private BigDecimal waardeVolgendJaar(BigDecimal huidigeWaarde, BigDecimal jaarlijksePremieStorting){
         return jaarlijksePremieStorting
-                .divide(BigDecimal.TWO)
+                .divide(BigDecimal.TWO, RoundingMode.HALF_UP)
                 .add(huidigeWaarde)
                 .multiply(RENDEMENT_JAAR)
                 .add(huidigeWaarde)

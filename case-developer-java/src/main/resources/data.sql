@@ -11,7 +11,7 @@ NULL,
  1,
  NULL,
  'test@tester.test',
- '2000-01-01',
+ '1965-01-01',
  'ABC123'
 );
 
@@ -22,8 +22,8 @@ INSERT INTO DIENSTVERBAND(ID,DEELNEMER_ID, WERKGEVER_ID, SALARIS, PARTTIME, INGA
  1,
  1,
  1,
- 12.5,
- 1,
- '2018-01-01',
+ 60000,
+ 0.80,
+ '2000-01-01',
  NULL
 );

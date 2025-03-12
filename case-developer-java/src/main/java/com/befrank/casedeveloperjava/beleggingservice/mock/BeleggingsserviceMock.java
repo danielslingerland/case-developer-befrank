@@ -16,11 +16,11 @@ public class BeleggingsserviceMock {
                 [
                     {
                        "naam": "Fonds1",
-                       "waarde": 1234.45
+                       "waarde": 10000.00
                      },
                      {
                        "naam": "Fonds2",
-                       "waarde": 3456.78
+                       "waarde": 90000.00
                      }
                 ]
                 """;

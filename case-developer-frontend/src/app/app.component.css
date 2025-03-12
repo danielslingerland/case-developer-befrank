@@ -1,10 +1,37 @@
+
+
 .container {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 20px;
+}
+
+.formfields{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+}
+
+.button {
+  grid-column: 1 / span 2;
+  transition-duration: .3s;
+  background-color: #00433d;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+}
+
+.button:hover{
+  background-color: #001e1b;
+}
+
+input {
+  padding: 6px;
 }
 
 
