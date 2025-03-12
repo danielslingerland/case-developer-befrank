@@ -18,10 +18,10 @@ public class PensioenController {
 
     @GetMapping("/pensioenwaarde")
     public ResponseEntity<BigDecimal> calculate(
-            @RequestParam Integer klant,
-            @RequestParam Integer leeftijd
+            @RequestParam Integer deelnemerId,
+            @RequestParam Integer pensioenleeftijd
     ) {
-        BigDecimal pensioenwaarde = pensioenService.berekenWaardePensioen(klant, leeftijd, LocalDate.now());
+        BigDecimal pensioenwaarde = pensioenService.berekenWaardePensioen(deelnemerId, pensioenleeftijd, LocalDate.now());
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.set("Access-Control-Allow-Origin", "http://localhost:4200");
 

@@ -2,7 +2,7 @@ import {Component, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
-import {PensioenService} from "./pensioenservice";
+import {Pensioenservice} from "./pensioenservice";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    private pensionService: PensioenService
+    private pensionService: Pensioenservice
   ) {}
 
   pensioenwaarde: number | null | undefined;

@@ -1,1 +1,1 @@
-GET http://localhost:8080/pensioenwaarde?klant=1&leeftijd=61
+GET http://localhost:8080/pensioenwaarde?deelnemerId=1&pensioenleeftijd=61
